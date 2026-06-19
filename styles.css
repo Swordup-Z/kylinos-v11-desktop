@@ -184,6 +184,10 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.content-band.alt {
+  background: #edf2ef;
+}
+
 .section-inner {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
@@ -277,6 +281,26 @@ h1 {
   font-weight: 800;
 }
 
+.callout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 26px;
+  background: var(--surface);
+}
+
+.callout h2 {
+  margin-bottom: 10px;
+}
+
+.callout p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .site-footer {
   padding: 34px 0;
   color: var(--muted);
@@ -286,6 +310,9 @@ h1 {
 .footer-inner {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
+}
+
+.footer-meta {
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -314,12 +341,16 @@ h1 {
     padding-top: 44px;
   }
 
+  .callout {
+    grid-template-columns: 1fr;
+  }
+
   .grid,
   .project-grid {
     grid-template-columns: 1fr;
   }
 
-  .footer-inner {
+  .footer-meta {
     flex-direction: column;
   }
 }
@@ -337,7 +368,8 @@ h1 {
     width: 100%;
   }
 
-  .card {
+  .card,
+  .callout {
     padding: 18px;
   }
 }
