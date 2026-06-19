@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>kylinos-v11-desktop</title>
-    <meta name="description" content="A central landing page for KylinOS Desktop V11 projects and reusable skills.">
+    <meta name="description" content="A simple project index for KylinOS Desktop V11.">
     <meta property="og:title" content="kylinos-v11-desktop">
-    <meta property="og:description" content="Project hub for KylinOS Desktop V11 troubleshooting and enhancement skills.">
+    <meta property="og:description" content="A simple project index for KylinOS Desktop V11.">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -15,8 +15,14 @@
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="#">kylinos-v11-desktop</a>
         <div class="nav-links">
-          <a href="#projects">Projects</a>
-          <a href="https://github.com/Swordup-Z/kylinos-v11-desktop">GitHub</a>
+          <a href="#projects">
+            <span class="lang-en">Projects</span>
+            <span class="lang-zh" hidden>项目</span>
+          </a>
+          <div class="lang-switch" aria-label="Language">
+            <button class="lang-option active" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang-option" type="button" data-lang="zh" aria-pressed="false">中文</button>
+          </div>
         </div>
       </nav>
     </header>
@@ -25,14 +31,20 @@
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-inner">
           <div>
-            <p class="eyebrow">KylinOS Desktop V11 ecosystem</p>
+            <p class="eyebrow">
+              <span class="lang-en">KylinOS Desktop V11</span>
+              <span class="lang-zh" hidden>麒麟桌面操作系统 V11</span>
+            </p>
             <h1 id="page-title">kylinos-v11-desktop</h1>
             <p class="lede">
-              A central landing page for projects related to KylinOS Desktop V11, starting with reusable system troubleshooting knowledge and expanding toward feature enhancement skills.
+              <span class="lang-en">A simple index for KylinOS Desktop V11 projects, skills, and tools.</span>
+              <span class="lang-zh" hidden>麒麟桌面操作系统 V11 项目、技能和工具的简洁入口。</span>
             </p>
             <div class="actions">
-              <a class="button primary" href="#projects">View projects -></a>
-              <a class="button" href="https://github.com/Swordup-Z">Open GitHub -></a>
+              <a class="button primary" href="#projects">
+                <span class="lang-en">View projects -></span>
+                <span class="lang-zh" hidden>查看项目 -></span>
+              </a>
             </div>
           </div>
         </div>
@@ -41,48 +53,88 @@
       <section class="content-band" id="projects" aria-labelledby="projects-title">
         <div class="section-inner">
           <div class="section-heading">
-            <h2 id="projects-title">Projects</h2>
+            <h2 id="projects-title">
+              <span class="lang-en">Projects</span>
+              <span class="lang-zh" hidden>项目</span>
+            </h2>
             <p>
-              The project family currently starts with kylinos-v11-desktop-fix-skill. A separate enhancement skill is planned next.
+              <span class="lang-en">The index starts with a fix skill. An enhancement skill is planned.</span>
+              <span class="lang-zh" hidden>当前先收录修复技能，后续计划加入增强技能。</span>
             </p>
           </div>
           <div class="grid project-grid">
             <article class="card">
-              <span class="tag teal">Skill</span>
+              <span class="tag teal">
+                <span class="lang-en">Skill</span>
+                <span class="lang-zh" hidden>技能</span>
+              </span>
               <h3>kylinos-v11-desktop-fix-skill</h3>
-              <p>Reusable KylinOS Desktop V11 system repair knowledge for AI-assisted diagnosis and desktop maintenance.</p>
-              <a class="card-link" href="https://github.com/Swordup-Z/kylinos-v11-desktop-fix-skill">Open repository -></a>
+              <p>
+                <span class="lang-en">Reusable repair knowledge for KylinOS Desktop V11.</span>
+                <span class="lang-zh" hidden>麒麟桌面操作系统 V11 的可复用修复经验。</span>
+              </p>
+              <a class="card-link" href="https://github.com/Swordup-Z/kylinos-v11-desktop-fix-skill">
+                <span class="lang-en">Open repo -></span>
+                <span class="lang-zh" hidden>打开仓库 -></span>
+              </a>
             </article>
             <article class="card">
-              <span class="tag amber">Planned</span>
+              <span class="tag amber">
+                <span class="lang-en">Planned</span>
+                <span class="lang-zh" hidden>计划中</span>
+              </span>
               <h3>os-enhance-skill</h3>
-              <p>A planned skill repository for reusable KylinOS Desktop V11 feature enhancement workflows and implementation notes.</p>
-              <span class="card-note">Coming later</span>
+              <p>
+                <span class="lang-en">Reusable notes for desktop feature improvements.</span>
+                <span class="lang-zh" hidden>桌面功能增强的可复用经验。</span>
+              </p>
+              <span class="card-note">
+                <span class="lang-en">Coming later</span>
+                <span class="lang-zh" hidden>稍后添加</span>
+              </span>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="content-band alt" aria-labelledby="contribute-title">
-        <div class="section-inner">
-          <div class="callout">
-            <div>
-              <h2 id="contribute-title">A practical index for desktop work</h2>
-              <p>
-                New KylinOS Desktop V11 repositories can be added here when they become public entry points.
-              </p>
-            </div>
-            <a class="button primary" href="https://github.com/Swordup-Z/kylinos-v11-desktop">Improve this page -></a>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <span>MIT Licensed.</span>
-        <span>Maintained for KylinOS Desktop V11 related work.</span>
+        <span>
+          <span class="lang-en">MIT Licensed.</span>
+          <span class="lang-zh" hidden>MIT 许可。</span>
+        </span>
+        <span>
+          <span class="lang-en">For KylinOS Desktop V11 related work.</span>
+          <span class="lang-zh" hidden>用于麒麟桌面操作系统 V11 相关项目。</span>
+        </span>
       </div>
     </footer>
+    <script>
+      const languageButtons = document.querySelectorAll(".lang-option");
+      const englishText = document.querySelectorAll(".lang-en");
+      const chineseText = document.querySelectorAll(".lang-zh");
+
+      function setLanguage(language) {
+        const useChinese = language === "zh";
+        document.documentElement.lang = useChinese ? "zh-CN" : "en";
+        englishText.forEach((item) => {
+          item.hidden = useChinese;
+        });
+        chineseText.forEach((item) => {
+          item.hidden = !useChinese;
+        });
+        languageButtons.forEach((button) => {
+          const active = button.dataset.lang === language;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+      }
+
+      languageButtons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.lang));
+      });
+    </script>
   </body>
 </html>
