@@ -367,9 +367,11 @@ h1 {
 .project-copy h3 {
   margin-bottom: 18px;
   font-size: clamp(1.95rem, 3.4vw, 3.4rem);
-  line-height: 1.1;
+  line-height: 1.16;
   letter-spacing: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  word-break: normal;
 }
 
 .project-copy p {
