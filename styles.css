@@ -374,6 +374,15 @@ h1 {
   word-break: normal;
 }
 
+.project-title {
+  text-wrap: auto;
+}
+
+.title-line {
+  display: block;
+  line-height: 1.16;
+}
+
 .project-copy p {
   max-width: 680px;
   margin-bottom: 14px;
