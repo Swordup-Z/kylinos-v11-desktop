@@ -28,7 +28,7 @@ https://www.kylinos.cn/support/trial/download/
 
 | Project | Status | Description |
 | --- | --- | --- |
-| os-enhance-skill | Planned | A future skill repository for verified KylinOS Desktop V11 enhancement workflows. |
+| kylinos-v11-desktop-enhance-skill | Planned | A future skill repository for verified KylinOS Desktop V11 enhancement workflows. |
 | kylin-space-guard | In development | A conservative desktop space cleaner for Kaiming/KARE, ostree usage, and rollback-safe cleanup. |
 | kylinos-v11-desktop-computer-use | In development | A lightweight X11/XTest helper that gives AI tools stronger desktop observation and control. |
 

@@ -328,6 +328,10 @@ h1 {
 }
 
 .project-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.58fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
   padding: 58px 0;
   border-top: 1px solid rgba(210, 210, 215, 0.86);
   transition: border-color 180ms ease, transform 180ms ease;
@@ -341,27 +345,79 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
-.project-copy {
-  max-width: 850px;
+.project-story:nth-of-type(even) {
+  grid-template-columns: minmax(260px, 0.58fr) minmax(0, 1fr);
+}
+
+.project-story:nth-of-type(even) .project-visual {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .project-story:nth-of-type(even) .project-copy {
-  margin-left: auto;
+  grid-column: 2;
+  justify-self: end;
+}
+
+.project-copy {
+  width: 100%;
+  max-width: 720px;
 }
 
 .project-copy h3 {
   margin-bottom: 18px;
-  font-size: clamp(2.25rem, 5vw, 4.6rem);
-  line-height: 0.98;
+  font-size: clamp(1.95rem, 3.4vw, 3.4rem);
+  line-height: 1;
   letter-spacing: 0;
   overflow-wrap: anywhere;
 }
 
 .project-copy p {
-  max-width: 760px;
+  max-width: 680px;
+  margin-bottom: 14px;
   color: var(--muted);
   font-size: clamp(1.06rem, 1.8vw, 1.28rem);
   font-weight: 500;
+}
+
+.project-copy p:last-of-type {
+  margin-bottom: 18px;
+}
+
+.project-visual {
+  min-height: 230px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(210, 210, 215, 0.86);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(238, 243, 240, 0.74)),
+    var(--surface);
+  color: var(--teal);
+}
+
+.project-story:nth-of-type(2n) .project-visual {
+  color: var(--amber);
+}
+
+.project-story:nth-of-type(3n) .project-visual {
+  color: var(--rust);
+}
+
+.project-icon {
+  width: min(72%, 210px);
+  height: auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.project-icon rect,
+.project-icon circle,
+.project-icon path {
+  vector-effect: non-scaling-stroke;
 }
 
 .resource-panel {
@@ -480,6 +536,34 @@ h1 {
 
   .feature-columns {
     grid-template-columns: 1fr;
+  }
+
+  .project-story,
+  .project-story:nth-of-type(even) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-story:nth-of-type(even) .project-copy,
+  .project-story:nth-of-type(even) .project-visual {
+    grid-column: 1;
+  }
+
+  .project-story:nth-of-type(even) .project-copy {
+    grid-row: 1;
+    justify-self: stretch;
+  }
+
+  .project-story:nth-of-type(even) .project-visual {
+    grid-row: 2;
+  }
+
+  .project-copy {
+    max-width: none;
+  }
+
+  .project-visual {
+    min-height: 180px;
   }
 
   .footer-meta {
