@@ -24,13 +24,13 @@ https://www.kylinos.cn/support/trial/download/
 | --- | --- | --- |
 | [kylinos-v11-desktop-fix-skill](https://github.com/Swordup-Z/kylinos-v11-desktop-fix-skill) | Active | Reusable repair knowledge for KylinOS Desktop V11 system issues. |
 | [kylinos-v11-desktop-enhance-skill](https://github.com/Swordup-Z/kylinos-v11-desktop-enhance-skill) | Active | Reusable enhancement knowledge for verified KylinOS Desktop V11 improvement workflows. |
+| [kylinos-v11-desktop-computer-use](https://github.com/Swordup-Z/kylinos-v11-desktop-computer-use) | Active | Lightweight uinput-based desktop automation helper for KylinOS Desktop V11 UI verification. |
 
 ### Projects in development
 
 | Project | Status | Description |
 | --- | --- | --- |
 | kylin-space-guard | In development | A conservative desktop space cleaner for Kaiming/KARE, ostree usage, and rollback-safe cleanup. |
-| kylinos-v11-desktop-computer-use | In development | A lightweight X11/XTest helper for desktop observation, input simulation, and UI verification. |
 
 ## Purpose
 
